@@ -19,7 +19,8 @@ l1_plot = pd.read_csv('l1_plot.csv')
 fig_l1 = px.scatter(l1_plot, x='t-SNE-1',
            y='t-SNE-2',
            hover_data=['L1', 'L3', 'противоион', 'IC50,μM±Dark'],
-           color='IC50,μM±Dark')
+           color='IC50,μM±Dark',
+           range_color=[0,100])
 
 fig_l1.update_layout(
                     autosize=False,
@@ -36,7 +37,8 @@ l3_plot = pd.read_csv('l3_plot.csv')
 fig_l3 = px.scatter(l3_plot, x='t-SNE-1',
            y='t-SNE-2',
            hover_data=['L1', 'L3', 'противоион', 'IC50,μM±Dark'],
-           color='IC50,μM±Dark')
+           color='IC50,μM±Dark',
+           range_color=[0,100])
 
 fig_l3.update_layout(
     autosize=False,
@@ -52,7 +54,8 @@ set_l3_plot = pd.read_csv('set_l3_plot.csv')
 fig_l3_set = px.scatter(set_l3_plot, x='t-SNE-1',
            y='t-SNE-2',
            hover_data=['L1', 'L3', 'противоион', 'IC50,μM±Dark'],
-           color='IC50,μM±Dark')
+           color='IC50,μM±Dark',
+           range_color=[0,100])
 
 fig_l3_set.update_layout(
     autosize=False,
